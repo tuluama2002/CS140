@@ -1,0 +1,26 @@
+header p {
+    color:blue;
+}
+
+main p{
+    color: darkred;
+}
+
+h1{
+    color:cadetblue;
+}
+
+#maintitle {
+    color:darkgoldenrod;
+
+}
+
+#firstparagraph {
+    color: teal;
+
+}
+
+#secondquestion {
+    color: blueviolet;
+}
+
