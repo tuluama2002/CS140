@@ -1,3 +1,23 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    background-color:#e8dcc8;
+    background-image:url("bluebg.jpg");
+    background-repeat:repeat;
+    font-family:Georgia,serif;
+    color:#222;margin:0 auto;
+    max-width:800px;
+    padding:20px;
+    line-height:1.5
+}
+header{
+    background:#fdf8f0 url("redFlowerSmall.png") no-repeat right top;
+    padding:40px
+}
+
+img{
+    width:400px
+}
+
+ul{
+    list-style-image:url("dot.png")
+    
 }
