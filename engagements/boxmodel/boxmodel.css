@@ -9,4 +9,22 @@ body {
 .p1 {
     width: 250px;
     height: 300px;
+    overflow: scroll;
+    margin-top: 10px;
+    border-top: 4px solid red;
+    padding: 30px;
+
+}
+
+.p2{
+    margin: 20px;
+    padding: 30px; 
+    border-width: 20px;
+    border-color: black;
+    border-style: dashed;
+}
+
+.p3{
+    border: thin solid black;
+    padding: 50px 10px;
 }
