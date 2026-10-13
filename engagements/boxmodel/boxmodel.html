@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boxmodel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>More CSS: Boxes and Units</h1>
+</header>
+<main>
+<h2>Block and Inline Tags</h2>
+<p>This paragraph is a block tag. It has some <strong>strong text</strong>, some <em>emphasized text</em>, and a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">link to MDN</a>, which are all inline tags.</p>
+<div>This div is another block tag.</div>
+<ul>
+<li>A list is a block tag too.</li>
+</ul>
+
+<h2>An Image Inside a Paragraph</h2>
+<p>Here is a sentence with a picture in the middle of it <img src="point2.jpg" alt="Natural rock arch over turquoise water at Laie Point" width="120"> so you can see that an img sits in the line like a word. It is inline, but because I gave it a width it acts like inline-block.</p>
+
+<h2>The Figure Tag</h2>
+<figure>
+<img src="point2.jpg" alt="Natural rock arch over turquoise water at Laie Point" width="300">
+<figcaption>A natural rock arch at Laie Point.</figcaption>
+</figure>
+
+<h2>The Box Model</h2>
+<div class="box">This box has different padding on each axis, a border on the bottom only, and a different margin on every side.</div>
+
+<h2>Units of Measurement</h2>
+<p class="units">This text uses em for font size, a percentage for width, and rem for margin.</p>
+<p class="vw">This box uses vw for width, so it changes when the window changes size.</p>
+
+<h2>Questions</h2>
+<h3>What is the difference between block tags and inline tags?</h3>
+<p>Block tags start on a new line and stretch across the full width of the page, like p, div, and h1. Inline tags sit inside a line of text and are only as wide as their content, like strong, em, and a.</p>
+<h3>What is the margin, border, and padding?</h3>
+<p>Padding is the space between the content and the border. The border is the line around the padding. The margin is the empty space outside the border that pushes other boxes away.</p>
+<h3>What are units of measurement you can use in CSS?</h3>
+<p>Absolute units like px, and relative units like em, rem, %, vw, and vh. Relative units change with the font size or the size of the window, while px stays the same.</p>
+<h3>When would you use a figure tag?</h3>
+<p>Use a figure when an image, chart, or code sample goes with a caption and should stand on its own as one block, separate from the surrounding text.</p>
+</main>
+<footer>
+    <p>&copy; 2026 Marieta Tulua</p>
+</footer>
+</body>
+</html>

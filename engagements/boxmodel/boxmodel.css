@@ -1,0 +1,35 @@
+body{font-family:Georgia,serif;
+    font-size:1.1em;
+    line-height:1.5;
+    color:#222;
+    background-color:#f4efe4;
+    margin:0}
+header{
+    background-color:#00828c;
+    color:#fff;
+    text-align:center;
+    padding:1rem}
+main{width:80%;
+    max-width:50rem;
+    margin:1.5rem auto;
+    padding:1rem 2rem;
+    background-color:#fff}
+p,div,ul{
+    outline:1px solid red}
+figure{
+    border:1px solid #999;
+    padding:0.5em;
+    display:inline-block;
+    margin:1em 0}
+figcaption{
+    font-style:italic}
+.box{padding:10px 40px;
+    border-bottom:5px solid #00828c;
+    margin:5px 10px 20px 40px;
+    background-color:#e8f4f5}
+.units{font-size:1.3em;
+    width:75%;
+    margin:2rem 0}
+.vw{width:50vw;
+    background-color:#ffe9a8;
+    padding:1em}
