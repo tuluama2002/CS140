@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Positioning</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+<h1>Positioning Boxes</h1>
+<figure class="float">
+<img src="photo.jpg" alt="Blue ocean and a small tree on the rocky cliff at Laie Point" width="150">
+<figcaption>The coast at Laie Point (floated left).</figcaption>
+</figure>
+<p>Normal flow is how the browser lays out a page when nothing special is applied. This first paragraph is short on purpose so you can see the next heading slide up beside the floated picture.</p>
+<h2>Normal Flow</h2>
+<p>Block boxes stack from the top of the page to the bottom, and inline content runs from left to right inside each block. Every example below changes that default in a different way.</p>
+<h2>Float</h2>
+<p>Laie sits on the north shore of Oahu, and the coast there has rocky points, calm beaches, and green mountains behind it. I use these paragraphs as filler text so the page is long enough to scroll.</p>
+<p>When a figure is floated, it leaves normal flow and the text wraps around it. The boxes after it move up and fill the space beside it, which can surprise you at first.</p>
+<h2>Relative</h2>
+<figure class="relative">
+<img src="photo.jpg" alt="Blue ocean and a small tree on the rocky cliff at Laie Point" width="150">
+<figcaption>Relative figure.</figcaption>
+</figure>
+<p>A relatively positioned box moves from where it would normally be, but the space it used to take stays empty. The paragraphs around it do not shift up to fill the gap.</p>
+<h2>Absolute</h2>
+<figure class="absolute">
+<img src="photo.jpg" alt="Blue ocean and a small tree on the rocky cliff at Laie Point" width="150">
+<figcaption>Absolute figure.</figcaption>
+</figure>
+<p>An absolutely positioned box is removed from normal flow completely and is placed using top, right, bottom, and left. It scrolls away with the page, and it leaves no gap behind.</p>
+<h2>Fixed</h2>
+<figure class="fixed">
+<img src="photo.jpg" alt="Blue ocean and a small tree on the rocky cliff at Laie Point" width="150">
+<figcaption>Fixed figure.</figcaption>
+</figure>
+<p>A fixed box is also removed from the flow, but it is placed relative to the browser window, so it stays on screen while you scroll. Scroll down to watch the fixed picture stay put.</p>
+<h2>Questions</h2>
+<h3>What is normal flow in HTML?</h3>
+<p>Normal flow is the default layout. Block boxes stack from top to bottom, and inline content runs left to right inside them, in the same order as the HTML.</p>
+<h3>What does float do? Why do you need to clear the float?</h3>
+<p>Float moves a box to the left or right and lets text wrap around it. It takes the box out of normal flow, so the boxes after it move up beside it. Clear makes a box start below the float so headings and other content do not get stuck next to it.</p>
+<h3>What do absolute, fixed, and relative do?</h3>
+<p>Relative moves a box from its normal spot but keeps its original space. Absolute removes the box from the flow and places it by top, right, bottom, and left, and it scrolls with the page. Fixed also leaves the flow but sticks to the browser window, so it stays visible when you scroll.</p>
+<h3>How can you make nice navigation buttons for mobile devices?</h3>
+<p>Set the links to display: block so each one is a full-width box, then add padding, a background color, and spacing so they are big and easy to tap with a thumb.</p>
+<h3>Where can you find videos to review what we talked about in class?</h3>
+<p>VIDEO_ANSWER</p>
+</body>
+</html>
