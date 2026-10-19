@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Parents and Children in Grid</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h1>Parents, Children, and Grandchildren</h1>
-<div class="container">
-<div class="column">
-<h2>Column One</h2>
-<p>This column is a child of the container. The paragraph inside it is a grandchild.</p>
-</div>
-<div class="column">
-<h2>Column Two</h2>
-<p>The container decides how wide this column is. The column decides how its own content flows.</p>
-</div>
-<div class="column">
-<h2>Column Three</h2>
-<p>Inside the column, everything uses normal flow because I did not give it a layout of its own.</p>
-</div>
-</div>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parents and Children in Grid</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Parents, Children, and Grandchildren</h1>
+        <div class="container">
+        <div class="column">
+        <h2>Column One</h2>
+             <p>This column is a child of the container. The paragraph inside it is a grandchild.</p>
+        </div>
+        <div class="column">
+        <h2>Column Two</h2>
+             <p>The container decides how wide this column is. The column decides how its own content flows.</p>
+        </div>
+        <div class="column">
+        <h2>Column Three</h2>
+             <p>Inside the column, everything uses normal flow because I did not give it a layout of its own.</p>
+        </div>
+        </div>
 
-<h2>My Own Parent</h2>
-<div class="gallery">
-<div class="tile one">One</div>
-<div class="tile two">Two</div>
-<div class="tile three">Three</div>
-<div class="tile four">Four</div>
-<div class="tile five">Five</div>
-</div>
+        <h2>My Own Parent</h2>
+            <div class="gallery">
+            <div class="tile one">One</div>
+            <div class="tile two">Two</div>
+            <div class="tile three">Three</div>
+            <div class="tile four">Four</div>
+            <div class="tile five">Five</div>
+        </div>
 
-<h2>Questions</h2>
-<h3>According to the instructor, what is the main difference between CSS Grid and CSS Flex?</h3>
-<p>Flex lays out items in one direction at a time, either a row or a column. Grid lays out items in both rows and columns at the same time, so it is better for whole page layouts.</p>
-<h3>Who decides where a child goes on the page: the child or its parent?</h3>
-<p>The parent decides. In my layout the container uses grid to give each of the three columns its space, so the columns do not place themselves. Each column then decides how its own children, the grandchildren, are laid out inside it.</p>
-</body>
+        <h2>Questions</h2>
+        <h3>According to the instructor, what is the main difference between CSS Grid and CSS Flex?</h3>
+             <p>Flex lays out items in one direction at a time, either a row or a column. Grid lays out items in both rows and columns at the same time, so it is better for whole page layouts.</p>
+        <h3>Who decides where a child goes on the page: the child or its parent?</h3>
+             <p>The parent decides. In my layout the container uses grid to give each of the three columns its space, so the columns do not place themselves. Each column then decides how its own children, the grandchildren, are laid out inside it.</p>
+        <footer>
+            <p>2026 &copy; Marieta Tulua</p>
+        </footer>
+    </body>
 </html>
