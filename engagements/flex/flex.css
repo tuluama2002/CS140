@@ -30,3 +30,9 @@ nav a{
     flex-flow: row wrap;
     gap: 10px;
 }
+
+.answer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    color: rgb(0, 162, 255);
+}
