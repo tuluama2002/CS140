@@ -24,3 +24,47 @@ nav a{
     color:aliceblue;
 }
 
+.layout{
+    display:flex;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar{
+    width:200px;
+}
+
+main{
+    background-color: aquamarine;
+    width:250px;
+}
+
+img{
+    width:250px;
+}
+
+.card{
+    border:1px solid green;
+    border-radius: 10px;
+    width:250px;
+    overflow: hidden;
+}
+
+.cardcontainer{
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+
+}
+card a{
+    display:block;
+    padding: 10px;
+    background-color:beige;
+    width:250px;
+    margin-bottom:0 auto 5px auto;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+@media print{
+
+}
