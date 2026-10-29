@@ -27,7 +27,7 @@ nav a{
 
 .layout{
     display:flex;
-    grid-template-columns: 1fr 4fr;
+    
 }
 
 .sidebar{
@@ -38,17 +38,15 @@ nav a{
 
 main{
     background-color: aquamarine;
-    width:250px;
+    flex: 1;
+
 }
 
-img{
-    width:250px;
-}
 
 .card{
     border:1px solid green;
     border-radius: 10px;
-    width:250px;
+    flex: 1 1 250px;
     overflow: hidden;
 }
 
@@ -59,12 +57,12 @@ img{
     gap:10px;
 
 }
-card a{
+.card a{
     display:block;
     padding: 10px;
     background-color:beige;
     width:250px;
-    margin-bottom:0 auto 5px auto;
+    margin:0 auto 5px auto;
     border-radius: 5px;
     color: aliceblue;
 }
@@ -74,5 +72,28 @@ card a{
 }
 
 @media print{
+    nav, .sidebar{
+        display:none;
+    }
+    body{
+        color:black;
+    }
+}
 
+@media (max-width: 680px){
+    .layout{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .card{
+        flex: 1 1 100%;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    nav a{
+        padding: 14px 20px;
+    }
 }
