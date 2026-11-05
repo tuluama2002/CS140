@@ -7,7 +7,7 @@ body{
 }
 
 #schedule{
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 
 }
 
@@ -18,7 +18,7 @@ body{
 }
 
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 10px;
 }
 
@@ -32,5 +32,10 @@ th {
 }
 
 #schedule tbody tr:nth-child(even){
-    background-color: #fff3cd;
+    background-color: #cdedff;
+}
+
+#schedule tbody tr:nth-child(3){
+
+    border-color: rgb(94, 3, 3);
 }
