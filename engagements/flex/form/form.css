@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.form-row{
+.form-row, .check-row{
     margin: 10px 0;
     display:flex;
     gap:10px;
@@ -16,9 +16,28 @@ body{
 }
 
 fieldset{
-    background-color: rgb(255, 0, 170);
+    background-color: rgb(206, 9, 140);
+    border: thin-solid black;
+    box-shadow: 3px 3px 3px grey;
+}
+
+
+.form-row input:focus{
+    background-color: white;
+    border-color: blue;
+    outline: 2px solid blue;
+
 }
 
 .spacer{
     width:150px;
+}
+
+@media ONLY screen AND (max-width: 500px) {
+    .form-row, .check-row{
+        flex-direction:column;
+    }
+    .form-row label{
+        text-align:left;
+    }
 }

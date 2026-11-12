@@ -20,16 +20,17 @@
         <h2>Forms</h2>
         <form action="formprocessing.html" method="post">
             <fieldset>
+                <legend>Account</legend>
                 <div class="form-row">
                     <label for="personname">Full Name</label>
                     <input id="personname" type="text" name="fullname" placeholder="Full Name">
                 </div>
                 <div class="form-row">
                     <label for="email">Email</label>
-                    <input id="email" type="text" name="email" value="tuluama2002@byuh.edu">
+                    <input id="email" type="email" name="email" value="tuluama2002@byuh.edu">
                 </div>
                 <div class="form-row">
-                    <label or="bdate">Birthday</label>
+                    <label for="bdate">Birthday</label>
                     <input type="date" name="bdate" id="bdate">
                 </div>
                 <div class="form-row">
@@ -37,8 +38,8 @@
                 <input id="password" type="password" name="pass" placeholder="Password">
                 </div>
                 <div class="form-row">
-                    <label for="state">Age</label>
-                    <Select name="state" id="state">
+                    <label for="age">Age</label>
+                    <Select name="age" id="age">
                         <option value="blank"></option>
                         <option value="8">8-10</option>
                         <option value="11">11-12</option>
@@ -48,6 +49,8 @@
                         <option value="24">24+</option>
                     </Select>
                 </div>
+              </fieldset>
+                
                 <div class="check-row">
                     <div class="spacer"></div>
                     <label><input type="checkbox" name="remember">Remember Me?</label>
@@ -72,6 +75,7 @@
             </fieldset>
         </form>
 
+        <legend>Questions</legend>
         <ul>
             <li><strong>The form tag has an "action" attribute. What does it do?</strong>It tells the browser where to send the form data after hitting the submit button</li>
             <li><strong>The form tag has a "method" attribute. What does it do?</strong>It tells the browser how to send the form data</li>
@@ -79,7 +83,13 @@
             <li><strong>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.</strong> Placeholder is just a label hint its transparent where it dissapears when you start typing. Pre-set Vlue is real data its an outpu</li>
             <li><strong>List all the form controls that HTML5 added. Which ones did you put in your form?</strong>Password, submit, input, value, form</li>
         </ul>
-       
+        <ol>
+            <li><strong>What are different ways to style your form</strong>Forms can be styled using CSS properties</li>
+            <li><strong>The form tag has a "method" attribute. What does it do?</strong>It tells the browser how to send the form data</li>
+            <li><strong>Why does the professor like to use flex?</strong>because it just makes it easier to organize labels and form fields in rows to keep them aligned thats why he likes it</li>
+            <li><strong>What makes a good mobile form?</strong>having fields that are easy to see tap and tap in and the layout should fit the screen.</li>
+            
+        </ol>
     </main>
 
     <footer>
