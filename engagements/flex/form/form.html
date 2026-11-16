@@ -76,23 +76,48 @@
 
         <legend>Questions</legend>
         <ul>
-            <li><strong>The form tag has an "action" attribute. What does it do?</strong>It tells the browser where to send the form data after hitting the submit button</li>
-            <li><strong>The form tag has a "method" attribute. What does it do?</strong>It tells the browser how to send the form data</li>
-            <li><strong>What is the difference between a "POST" and a "GET"?</strong> puts the form data on the URL and could show your secret passcode whereas the POST puts the form data in the body of the request not the URL and did not show a secret passcode if there is a password input</li>
-            <li><strong>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.</strong> Placeholder is just a label hint its transparent where it dissapears when you start typing. Pre-set Vlue is real data its an outpu</li>
-            <li><strong>List all the form controls that HTML5 added. Which ones did you put in your form?</strong>Password, submit, input, value, form</li>
+            <li><strong>The form tag has an "action" attribute. What does it do?</strong><br>It tells the browser where to send the form data after hitting the submit button</li>
+            <li><strong>The form tag has a "method" attribute. What does it do?</strong><br>It tells the browser how to send the form data</li>
+            <li><strong>What is the difference between a "POST" and a "GET"?</strong><br> puts the form data on the URL and could show your secret passcode whereas the POST puts the form data in the body of the request not the URL and did not show a secret passcode if there is a password input</li>
+            <li><strong>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.</strong><br> Placeholder is just a label hint its transparent where it dissapears when you start typing. Pre-set Vlue is real data its an outpu</li>
+            <li><strong><br>List all the form controls that HTML5 added. Which ones did you put in your form?</strong><br>Password, submit, input, value, form</li>
         </ul>
         <ol>
-            <li><strong>What are different ways to style your form</strong>Forms can be styled using CSS properties</li>
-            <li><strong>The form tag has a "method" attribute. What does it do?</strong>It tells the browser how to send the form data</li>
+            <li><strong>What are different ways to style your form</strong><br>Forms can be styled using CSS properties</li>
+            <li><strong>The form tag has a "method" attribute. What does it do?</strong><br>It tells the browser how to send the form data</li>
             <li><strong>Why does the professor like to use flex?</strong>because it just makes it easier to organize labels and form fields in rows to keep them aligned thats why he likes it</li>
             <li><strong>What makes a good mobile form?</strong>having fields that are easy to see tap and tap in and the layout should fit the screen.</li>
             
         </ol>
+
+         <ul>
+            <li><strong>What is JavaScript? How did it get its name?</strong><br>-----</li>
+            <li><strong>What are the two ways you can run JavaScript?</strong>------</li>
+            <li><strong>What is jQuery? IS it still  popular today?</strong> ------</li>
+            <li><strong>What is the most popular front-end js library today?</strong> -------</li>
+            <li><strong>How does yout code prevent the form from being submitted? Why do we need to prevent it?</strong>-------</li>
+        </ul>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Marieta Tulua</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event)){event.preventDefault();
+        alert("Form Submitted");
+
+        const fullname = document.getElementById('fullname').value;
+        const email = document.getElementById('email').value;
+        const bdate = document.getElementById('bdate').value;
+        const password = document.getElementById('pass').value;
+        const age = document.getElementById('age').value;
+
+
+
+
+
+        }
+    </script>
 </body>
 </html>

@@ -19,6 +19,16 @@ fieldset{
     background-color: rgb(206, 9, 140);
     border: thin-solid black;
     box-shadow: 3px 3px 3px grey;
+    border:0cap;
+
+}
+
+legend{
+    background-color:#8c005d;
+    color:#fff;
+    padding:4px 14px;
+    border-radius:6px;
+    font-weight:bold
 }
 
 
