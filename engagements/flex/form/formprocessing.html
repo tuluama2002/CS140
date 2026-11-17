@@ -18,11 +18,11 @@
 
     <main>
         <h2>Forms</h2>
-        <form action="formprocessing.html" method="post">
+        <form id="signup-form "form action="formprocessing.html" method="post">
             <fieldset>
                 <legend>Account</legend>
                 <div class="form-row">
-                    <label for="personname">Full Name</label>
+                    <label for="fullname">Full Name</label>
                     <input id="fullname" type="text" name="fullname" placeholder="Full Name">
                 </div>
                 <div class="form-row">
@@ -42,11 +42,11 @@
                     <Select name="age" id="age">
                         <option value="blank"></option>
                         <option value="8">8-10</option>
-                        <option value="11">11-12</option>
-                        <option value="13">13-15</option>
-                        <option value="16">16-19</option>
-                        <option value="20">20-23</option>
-                        <option value="24">24+</option>
+                        <option value="11">11-13</option>
+                        <option value="13">14-16</option>
+                        <option value="16">17-20</option>
+                        <option value="20">21+</option>
+                        
                     </Select>
                 </div>
 
@@ -91,11 +91,11 @@
         </ol>
 
          <ul>
-            <li><strong>What is JavaScript? How did it get its name?</strong><br>-----</li>
-            <li><strong>What are the two ways you can run JavaScript?</strong>------</li>
-            <li><strong>What is jQuery? IS it still  popular today?</strong> ------</li>
-            <li><strong>What is the most popular front-end js library today?</strong> -------</li>
-            <li><strong>How does yout code prevent the form from being submitted? Why do we need to prevent it?</strong>-------</li>
+            <li><strong>What is JavaScript? How did it get its name?</strong><br>Its a high level programming language used alongside html and css. it is used to give a website its behavior and interactivity. Interesting fact about javascript is that its orgin name was Mocha then changed to livescript when it was released in beta and then got renamed after to Javascript for marketing purposes after Netscape patnered with SunMicrosystems the creators of Java.</li>
+            <li><strong>What are the two ways you can run JavaScript?</strong><br>The two ways you can run JavaScript is in the Web Browser and on tha server or local machine.</li>
+            <li><strong>What is jQuery? IS it still  popular today?</strong><br>jQuery is a fast, small, and feature rich Javascript library designed to make things like HTML dcument traversal and manipulation, event handling, animation and AJax. it was created in 2006 and its not popular anymore because modern JavaScript got better.</li>
+            <li><strong>What is the most popular front-end js library today?</strong><br> React</li>
+            <li><strong>How does yout code prevent the form from being submitted? Why do we need to prevent it?</strong><br>In JavaScript, you prevent a form from submitting using a built-in method called event.preventDefault().we need to prevent this because it stops page reloads, enables validation and supports modern workflows.</li>
         </ul>
 
     </main>
@@ -104,14 +104,14 @@
         <p>&copy; 2026 Marieta Tulua</p>
     </footer>
     <script>
-        document.getElementById('myForm').addEventListener('submit', function(event){
+        document.getElementById('signup-form').addEventListener('submit', function(event){
         event.preventDefault();
-        alert("Form Submitted");
+        
 
         const fullname = document.getElementById('fullname').value;
         const email = document.getElementById('email').value;
         const bdate = document.getElementById('bdate').value;
-        const password = document.getElementById('pass').value;
+        const password = document.getElementById('password').value;
         const age = document.getElementById('age').value;
         
         if (!fullname || !email) {
@@ -132,7 +132,9 @@
             age: age
         };
 
+        
         console.log(formData);
+        alert("Form Submitted");
 
 
 
