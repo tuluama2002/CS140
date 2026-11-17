@@ -18,7 +18,7 @@
 
     <main>
         <h2>Forms</h2>
-        <form id="signup-form "form action="formprocessing.html" method="post">
+        <form id="signup-form"form action="formprocessing.html" method="post">
             <fieldset>
                 <legend>Account</legend>
                 <div class="form-row">
@@ -40,7 +40,7 @@
                 <div class="form-row">
                     <label for="age">Age</label>
                     <Select name="age" id="age">
-                        <option value="blank"></option>
+                        <option value=""></option>
                         <option value="8">8-10</option>
                         <option value="11">11-13</option>
                         <option value="13">14-16</option>
@@ -74,7 +74,7 @@
             </fieldset>
         </form>
 
-        <legend>Questions</legend>
+        <h2>Questions</h2>
         <ul>
             <li><strong>The form tag has an "action" attribute. What does it do?</strong><br>It tells the browser where to send the form data after hitting the submit button</li>
             <li><strong>The form tag has a "method" attribute. What does it do?</strong><br>It tells the browser how to send the form data</li>
@@ -120,8 +120,8 @@
 
         }
 
-        if (!age || age<18){
-            alert("you need to be 18");
+        if (!age || age<16){
+            alert("you need to be 17");
             return;
         }
 
