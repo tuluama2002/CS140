@@ -134,7 +134,7 @@
 
             
             console.log(formData);
-            alert("Form Submitted");
+            alert("Form Submited");
             const xhr = new XMLHttRequest();
             xhr.open("GET", "submit.json", true);
             xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -144,6 +144,12 @@
                     message = document = document.getElementById('message');
                     const response = JSON.parse(xhr.responseText);
                     message.textContent = response.message;
+                    form = document.getElementById('myForm');
+                        form.reset();
+                        //cleaar the message
+                        form.textContent ='';
+
+                    
 
                 } else if (xhr.readyState ===4) {
                     alert('error submitting form.');
