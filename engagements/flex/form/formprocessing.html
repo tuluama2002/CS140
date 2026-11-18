@@ -141,13 +141,13 @@
             xhr.onreadystatechange = function (){
                 if (xhr.readyState === 4 && xhr.status === 200) {
                     //alert('form submitted successfully.');
-                    message = document = document.getElementById('message');
+                    message = document.getElementById('message');
                     const response = JSON.parse(xhr.responseText);
                     message.textContent = response.message;
                     form = document.getElementById('myForm');
                         form.reset();
                         //cleaar the message
-                        form.textContent ='';
+                       // form.textContent ='';
 
                     
 
@@ -157,7 +157,7 @@
             };
             xhr.send(JSON.stringfy(formData));
             alert('Success: ${firstName} ${lastName}');
-
+            <div id ="message"></div>
 
 
 
